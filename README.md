@@ -1,1 +1,1 @@
-# Radiolytica-AI_Enhanced_Radiology_Workflow_Revolution
+# Radiolytica: AI Enhanced Radiology Workflow Revolution
