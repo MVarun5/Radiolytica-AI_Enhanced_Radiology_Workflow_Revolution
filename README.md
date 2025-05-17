@@ -6,7 +6,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
  🔍 **Automatic Detection** of Pneumonia, TB, and Cardiomegaly from chest X-ray images
 
- 📊 Confidence Scores with disease severity levels (Mild/Moderate/Severe)
+ 📊 **Confidence Scores** with disease severity levels (Mild/Moderate/Severe)
 
  📸 Grad-CAM Visualizations for infected lung regions
 
