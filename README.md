@@ -8,7 +8,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
  📊 **Confidence Scores** with disease severity levels (Mild/Moderate/Severe)
 
- 📸 Grad-CAM Visualizations for infected lung regions
+ 📸 **Grad-CAM Visualizations** for infected lung regions
 
  ❤️ CTR (Cardiothoracic Ratio) calculation for Cardiomegaly
 
