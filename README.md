@@ -10,7 +10,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
  📸 **Grad-CAM Visualizations** for infected lung regions
 
- ❤️ CTR (Cardiothoracic Ratio) calculation for Cardiomegaly
+ ❤️ **CTR (Cardiothoracic Ratio)** calculation for Cardiomegaly
 
  📁 Excel Report Generation — logs patient info & predictions in real-time
 
