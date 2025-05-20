@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiologist Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Radiologist Dashboard</h1>
+        <a href="landing page.html" class="logout-btn">Logout</a>
+    </header>
+
+    <section id="upload" class="upload-section">
+        <div class="container">
+            <div class="left-section">
+                <h2 class="upload-heading">Upload X-ray for Analysis</h2>
+                <div class="upload-wrapper">
+                <h3 style="color:red;"><strong><b>NOTE: Only human chest x-rays are allowed.</b></strong></h3>
+                    <div class="upload-area" onclick="document.getElementById('xray-upload').click()">
+                        <input type="file" id="xray-upload" accept="image/png, image/jpeg" required>
+                        <div class="upload-icon">📁</div>
+                            <h3>Choose or Drag & Drop Your X-Ray Image</h3>
+                            <p>or click to browse files</p>
+                            <p id="file-name" style="color: #bdc3c7; margin-top: 10px;"></p>
+                            <p><small>Supported formats: JPEG, PNG</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+        
+            <div class="right-section">
+                <h2>Patient Details</h2>
+                <form>
+                    <label for="patient-name">Patient Name:</label>
+                    <input type="text" id="patient-name" name="patient-name" placeholder="Enter name" required>
+                
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter age" required>
+                
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="Select Gender">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required>
+                </form>
+            </div>
+            
+            <div class="button-container">
+                <button id="analyze-btn" type="button">Analyze X-ray</button>
+                <button id="cancel-btn" type="button">Cancel</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="analysis-result" class="result-section">
+        <!-- Row 1: Uploaded image and predictions side by side -->
+<div class="container">
+    <div class="image-container">
+        <p>Uploaded Image:</p>
+        <img id="uploaded-image" src="#" alt="X-ray Image" style="display: none;"><br>
+    </div>
+
+    <div class="prediction-section">
+        <h3>Predictions:</h3>
+        <div class="result-box" id="pneumonia-result"></div>
+        <div class="result-box" id="tb-result"></div>
+        <div class="result-box" id="cardiomegaly-result"></div>
+    </div>
+</div>
+
+    
+        <!-- Second Row: Visualizations side by side -->
+        <div class="visualization-section">
+            <h3>Visualizations:</h3>
+            <div class="visualization-container">
+                <div class="viz-box">
+                    <h4>Pneumonia Analysis</h4>
+                    <img id="pneumonia-viz" src="#" alt="Pneumonia visualization" style="display: none;">
+                </div>
+    
+                <div class="viz-box">
+                    <h4>Tuberculosis Analysis</h4>
+                    <img id="tb-viz" src="#" alt="TB visualization" style="display: none;">
+                </div>
+    
+                <div class="viz-box">
+                    <h4>Cardiomegaly Analysis</h4>
+                    <img id="cardiomegaly-viz" src="#" alt="Cardiomegaly visualization" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div id="output"></div>
+    
+    <main>
+        <h2>Patients Data</h2>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Pneumonia Severity</th>
+                    <th>Tuberculosis Severity</th>
+                    <th>Cardiomegaly Severity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted dynamically -->
+            </tbody>
+        </table>
+
+        <button id="download-excel">Download Excel</button>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
