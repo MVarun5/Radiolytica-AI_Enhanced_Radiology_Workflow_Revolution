@@ -14,7 +14,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
  📁 **Excel Report Generation** — logs patient info & predictions in real-time
 
- 🧠 **AI Models**: DenseNet201 for Pneumonia & TB; anatomical logic for Cardiomegaly
+ 🧠 **AI Models**: **DenseNet201** for Pneumonia & TB; anatomical logic for Cardiomegaly
 
  🌐 Web-based interface built using Flask + HTML/CSS/JS
 
