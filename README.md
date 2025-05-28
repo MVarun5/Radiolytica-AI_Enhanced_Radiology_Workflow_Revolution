@@ -23,7 +23,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 Backend: Flask (Python) <br>
 Frontend: HTML5, CSS3, JavaScript (Vanilla) <br>
 AI Models: DenseNet201 (.h5) for Pneumonia & TB <br>
-Visualization: Grad-CAM (within Jupyter Notebooks)
+Visualization: Grad-CAM (within Jupyter Notebooks) <br>
 Cardiomegaly: CTR (Cardiothoracic Ratio) via width measurements
 Excel Logging: openpyxl
 Notebook Execution: nbconvert + ExecutePreprocessor
