@@ -24,7 +24,7 @@ Backend: Flask (Python) <br>
 Frontend: HTML5, CSS3, JavaScript (Vanilla) <br>
 AI Models: DenseNet201 (.h5) for Pneumonia & TB <br>
 Visualization: Grad-CAM (within Jupyter Notebooks) <br>
-Cardiomegaly: CTR (Cardiothoracic Ratio) via width measurements
+Cardiomegaly: CTR (Cardiothoracic Ratio) via width measurements <br>
 Excel Logging: openpyxl
 Notebook Execution: nbconvert + ExecutePreprocessor
 
