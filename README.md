@@ -18,6 +18,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
  🌐 Web-based interface built using **Flask + HTML/CSS/JS**
 
+
 # 🛠️ Tech Stack
 
 **Backend**: Flask (Python) <br>
@@ -28,3 +29,27 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 **Excel Logging**: openpyxl <br>
 **Notebook Execution**: nbconvert + ExecutePreprocessor
 
+
+# 🖼 Sample Output
+
+- ✅ Disease prediction (Normal / Pneumonia / TB / Cardiomegaly)
+- 🔥 Grad-CAM overlay within segmented lung region
+- 🧮 Cardiothoracic Ratio with threshold comparison
+- 📊 Severity scoring based on intensity of infection
+
+
+**📌 Notes**
+
+-> Lung segmentation masks are applied before Grad-CAM to focus only on relevant areas.
+
+-> The project uses mixed precision training and warm-up cosine decay learning rate schedules for optimized GPU training.
+
+-> Predictions are stored in the backend for further analysis or audit trails.
+
+**🧪 Evaluation Metrics Accuracy, Precision, Recall, F1-Score**
+
+-> ROC-AUC
+
+-> Specificity (for TB/Pneumonia)
+
+-> CTR Threshold (≥ 0.50 → Cardiomegaly
