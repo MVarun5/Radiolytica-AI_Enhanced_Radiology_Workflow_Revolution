@@ -1,6 +1,8 @@
 # Radiolytica: AI Enhanced Radiology Workflow Revolution
 
 Radiolytica is an AI-driven radiology assistant that processes chest X-rays to detect **Pneumonia**, **Tuberculosis (TB)**, and **Cardiomegaly**. It leverages deep learning (DenseNet201) and advanced computer vision techniques (lung segmentation + Grad-CAM + CTR) to assist radiologists by delivering real-time predictions, severity levels, and medical visualizations. It also logs results directly into an Excel sheet for workflow automation.
+
+---
  
 # 🚀 Features:
 
@@ -18,17 +20,21 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
  🌐 Web-based interface built using **Flask + HTML/CSS/JS**
 
+---
 
 # 🛠️ Tech Stack
 
-**Backend**: Flask (Python) <br>
-**Frontend**: HTML5, CSS3, JavaScript (Vanilla) <br>
-**AI Models**: DenseNet201 (.h5) for Pneumonia & TB <br>
-**Visualization**: Grad-CAM (within Jupyter Notebooks) <br>
-**Cardiomegaly**: CTR (Cardiothoracic Ratio) via width measurements <br>
-**Excel Logging**: openpyxl <br>
-**Notebook Execution**: nbconvert + ExecutePreprocessor
+| Task | Technology / Model |
+|:-------------:|:--------------:|
+| **Backend**    | Flask (Python) |
+| **Frontend** | HTML5, CSS3, JavaScript (Vanilla) |
+| **AI Models** | DenseNet201 (.h5) for Pneumonia & TB |
+| **Visualization** | Grad-CAM (within Jupyter Notebooks) |
+| **Cardiomegaly** | CTR (Cardiothoracic Ratio) via width measurements |
+| **Excel Logging** | openpyxl |
+| **Notebook Execution** | nbconvert + ExecutePreprocessor |
 
+---
 
 # 🖼 Sample Output
 
@@ -37,6 +43,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 - 🧮 Cardiothoracic Ratio with threshold comparison
 - 📊 Severity scoring based on intensity of infection
 
+---
 
 **📌 Notes**
 
