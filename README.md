@@ -59,4 +59,4 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
 -> Specificity (for TB/Pneumonia)
 
--> CTR Threshold (≥ 0.50 → Cardiomegaly
+-> CTR Threshold (≥ 0.50 → Cardiomegaly)
