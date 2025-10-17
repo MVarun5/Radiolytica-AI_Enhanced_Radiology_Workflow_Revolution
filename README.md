@@ -24,6 +24,8 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
 # 🛠️ Tech Stack
 
+<div align="center">
+
 | Task | Technology / Model |
 |:-------------:|:--------------:|
 | **Backend**    | Flask (Python) |
@@ -34,17 +36,32 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 | **Excel Logging** | openpyxl |
 | **Notebook Execution** | nbconvert + ExecutePreprocessor |
 
+</div>
+
 ---
 
 # 🖼 Sample Output
 
-- ✅ Disease prediction (Normal / Pneumonia / TB / Cardiomegaly)
-- 🔥 Grad-CAM overlay within segmented lung region
-- 🧮 Cardiothoracic Ratio with threshold comparison
-- 📊 Severity scoring based on intensity of infection
+<div align="center">
+<table>
+<tr>
+<td width="50%">
 
-![output_results_page](https://github.com/user-attachments/assets/efcb875e-df41-4732-88e8-bde61493e470)
+✅ **Disease prediction** - The model accurately classifies X-ray images into four categories: Normal, Pneumonia, Tuberculosis (TB), and Cardiomegaly, providing reliable diagnostic assistance.
 
+🔥 **Grad-CAM overlay** - Visual explanation of model predictions with Grad-CAM heatmaps overlaid within the segmented lung region, highlighting the areas the AI focused on for its decision.
+
+🧮 **Cardiothoracic Ratio** - Automated measurement of heart width relative to chest width with threshold comparison to detect cardiomegaly, providing quantitative analysis alongside qualitative predictions.
+
+📊 **Severity scoring** - Intelligent severity assessment based on the intensity and distribution of infection patterns, helping clinicians prioritize cases and understand disease progression.
+
+</td>
+<td width="50%">
+<img src="https://github.com/user-attachments/assets/efcb875e-df41-4732-88e8-bde61493e470" height="500" width="500" alt="Sample Output">
+</td>
+</tr>
+</table>
+</div>
 
 ---
 
