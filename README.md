@@ -47,7 +47,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
 **📌 Notes**
 
--> Lung segmentation masks are applied before Grad-CAM to focus only on relevant areas.
+-> Lung segmentation masks are applied before Grad-CAM to focus only on relevant areas. You can download the trained model from [here].(https://www.kaggle.com/models/lokesh0929/unet_segmentation)
 
 -> The project uses mixed precision training and warm-up cosine decay learning rate schedules for optimized GPU training.
 
