@@ -43,6 +43,9 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 - 🧮 Cardiothoracic Ratio with threshold comparison
 - 📊 Severity scoring based on intensity of infection
 
+![output_results_page](https://github.com/user-attachments/assets/efcb875e-df41-4732-88e8-bde61493e470)
+
+
 ---
 
 **📌 Notes**
