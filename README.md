@@ -4,7 +4,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
 ---
  
-# 🚀 Features:
+<h2> 🚀 Features: </h2>
 
  🔍 **Automatic Detection** of Pneumonia, TB, and Cardiomegaly from chest X-ray images
 
@@ -22,7 +22,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
 ---
 
-# 🛠️ Tech Stack
+<h2> 🛠️ Tech Stack </h2>
 
 <div align="center">
 
@@ -40,7 +40,7 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
 ---
 
-# 🖼 Sample Output
+<h2> 🖼 Sample Output </h2>
 
 <div align="center">
 <table>
@@ -65,7 +65,29 @@ Radiolytica is an AI-driven radiology assistant that processes chest X-rays to d
 
 ---
 
-**📌 Notes**
+<h2> ⚙️ How It Works </h2>
+
+1. User uploads a chest X-ray via the web interface.
+
+2. Flask receives and saves the image.
+
+3. The image is passed to 3 Jupyter notebooks:
+
+   - Pneumonia → DenseNet + Segmentation + Grad-CAM
+
+   - TB → DenseNet + Segmentation + Grad-CAM
+
+   - Cardiomegaly → CTR calculation
+
+4. Predictions + severity labels + images are returned to JavaScript.
+
+5. Dashboard displays results and visualizations.
+
+6. All results (including patient info) are saved to an Excel sheet.
+
+---
+
+<h2> 📌 Notes </h2>
 
 -> Lung segmentation masks are applied before Grad-CAM to focus only on relevant areas. You can download the trained model from [here](https://www.kaggle.com/models/lokesh0929/unet_segmentation).
 
